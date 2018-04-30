@@ -1,0 +1,582 @@
+/*GET FROM TYPEKIT*/
+@import url("https://use.typekit.net/esb3qtr.css");
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot');
+    src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.woff') format('woff'),
+        url('fonts/icomoon.ttf') format('truetype'),
+        url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #140050;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.wrapper {
+  width: 1464px;
+  height: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*HEADER ================*/
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 150px;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0;
+}
+
+header .user {
+  margin-right: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+}
+
+header .user .username {
+  font-size: 1.5em;
+}
+
+header .icon-user:before {
+  content: "\e971";
+  background-color: #9090a8;
+  padding: .1em .1em 0 .1em;
+}
+
+header .icon-user {
+  font-size: 2em;
+  height: 60px;
+  width: 60px;
+}
+
+/* PANELS =========*/
+
+main {
+  display: grid;
+  grid-template-columns: 4fr 2fr 6fr 100px;
+  grid-gap: 2.5em;
+}
+
+.panel {
+  display: grid;
+  grid-gap: .3em;
+}
+
+.app {
+  background-color: #f0f0f0;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  font-size: .7em;
+}
+
+.app .app-icon{
+  align-self: center;
+  margin-top: .8em;
+}
+
+.app .app-desc {
+  padding-left: .8em;
+  padding-right: .8em;
+  margin-bottom: .5em;
+}
+
+/*PANEL 1 ========================*/
+
+.panel1 {
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+
+.panel1 .app1, .panel1 .app4, .panel1 .app7, .panel1 .app9, .panel1 .app11, .panel1 .app13 {
+  grid-column: 1 / 3;
+}
+
+.panel1 .app8, .panel1 .app10, .panel1 .app12, .panel1 .app14 {
+  grid-column: 3 / 5;
+}
+
+.panel1 .app3 .app-desc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.panel1 .app10 .app-icon {
+  margin-bottom: .3em;
+}
+
+.panel1 .app10 .app-desc .icon {
+  font-size: 1em;
+}
+
+.panel1 .app11 .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: .5em;
+}
+
+.panel1 .app11 .app-icon {
+  margin: 0;
+}
+
+.panel1 .app11 h2 {
+  margin: 0;
+}
+
+.panel1 .app12 .app-icon {
+  align-self: flex-start;
+  padding-left: .8em;
+  padding-top: .5em;
+}
+
+.panel1 .app12 .icon {
+  font-size: 2em;
+}
+
+.panel1 .app13 .app-desc {
+  position: absolute;
+  margin-top: 7em;
+}
+
+.panel1 .app14 .content {
+  position: absolute;
+  margin-top: 5.6em;
+  background-color: #a81848;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 205px;
+}
+
+.panel1 .app14 .content .app-desc {
+  padding-top: .5em;
+}
+
+.panel1 .app14 .content .app-icon {
+  padding-left: .5em;
+  margin-top: 0;
+}
+
+.panel1 .app14 .icon {
+  font-size: 2em;
+}
+
+/*PANEL 2 ========================*/
+
+.panel2 {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(4, 100px);
+}
+
+.panel2 .app1, .panel2 .app2 {
+  grid-column: 1 / 3;
+}
+
+.panel2 .app1 .app-icon h2, .panel2 .app2 .app-icon h2 {
+  margin: 0;
+}
+
+.panel2 .app1 .app-icon, .panel2 .app2 .app-icon {
+  align-self: flex-start;
+  padding-left: .8em;
+}
+
+.panel2 .app2 .icon {
+  font-size: 2em;
+}
+
+/*PANEL 3 ========================*/
+
+.panel3 {
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+}
+
+.panel3 .app1, .panel3 .app11, .panel3 .app21 {
+  grid-column: 1 / 3;
+}
+
+.panel3 .app8, .panel3 .app17, .panel3 .app20 {
+  grid-column: 3 / 5;
+}
+
+.panel3 .app13 {
+  grid-column: 5 / 6;
+}
+
+.panel3 .app18 {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+
+.panel3 .app19 {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+}
+
+.panel3 .app1 .icon {
+  font-size: 6em;
+  color: black;
+}
+
+.panel3 .app1 .app-desc, .panel3 .app2 .app-desc {
+  background-color: lightgray;
+  margin-top: .5em;
+  padding: .2em;
+  color: black;
+}
+
+.panel3 .app5 img {
+  max-width: 90%;
+}
+
+.panel3 .app6 .app-desc {
+  background-color: lightgray;
+  margin-top: 1.5em;
+  padding: .2em;
+  color: black;
+}
+
+.panel3 .app8 .app-icon {
+  margin-top: .9em !important;
+}
+
+.panel3 .app2 .icon {
+  color: #901890;
+  font-size: 6em;
+}
+
+.panel3 .app5 .app-icon img {
+  width: 70px;
+}
+
+.panel3 .app6 .icon {
+  color: #3078f0;
+}
+
+.panel3 .app8 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.panel3 .app8 .app-icon{
+  margin: 0;
+  padding: 0;
+  max-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel3 .app8 .app-icon img{
+  max-height: 70px;
+}
+
+.panel3 .app10 .icon {
+  color: black;
+}
+
+.panel3 .app12 .app-icon {
+  margin-top: 1.5em;
+}
+
+.panel3 .app13 .icon {
+  color: yellow;
+}
+
+.panel3 .app17 .icon {
+  font-size: 7em;
+}
+
+.panel3 .app18 {
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.panel3 .app18 img {
+  max-width: 80%;
+  align-self: center;
+}
+
+.panel3 .app18 .app-desc {
+  background-color: lightgray;
+  margin-top: .1em;
+  padding: .2em;
+  color: black;
+}
+
+.panel3 .app20 .app-icon {
+  margin: 0;
+}
+
+.panel3 .app20 .icon {
+  font-size: 9em;
+}
+
+.panel3 .app21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel3 .app21 img {
+  max-width: 70%;
+}
+
+.panel3 .app22 .app-desc {
+  align-self: center;
+}
+
+/* PANEL 4 =====*/
+.panel4 .app2 img {
+  max-width: 90%;
+}
+
+.panel4 .app-icon {
+  margin-top: .8em;
+}
+
+.panel4 .icon {
+  font-size: 4em;
+}
+
+.panel4 .app1 .icon, .panel4 .app3 .icon {
+  color: #d84830;
+}
+
+.panel4 .app2 img {
+  max-width: 80%;
+}
+
+/* APPS BG COLORS ===================*/
+
+.panel1 .app1, .panel2 .app2  {
+  background-color: #007890; /*aqua blue*/
+}
+
+.panel1 .app2, .panel1 .app11 {
+  background-color: #3078f0; /*sky blue*/
+}
+
+.panel1 .app3, .panel1 .app10, .panel2 .app3, .panel3 .app3 {
+  background-color: #189000; /*green*/
+}
+
+.panel1 .app4, .panel1 .app12 {
+  background-color: #6048c0; /*purple*/
+}
+
+.panel1 .app5, .panel1 .app9, .panel2 .app4 {
+  background-color: #901890; /*magenta*/
+}
+
+.panel1 .app6 {
+  background-color: #3018a8; /*dark blue*/
+}
+
+.panel1 .app7, .panel2 .app1, .panel2 .app5, .panel3 .app11 {
+  background-color: #d84830; /*orange*/
+}
+
+.panel1 .app14, .panel2 .app6 {
+  background-color: #a81848; /*pink*/
+}
+
+.panel3 .app17 {
+  background-color: #901800; /*netflix*/
+}
+
+.panel3 .app4, .panel3 .app5, .panel3 .app9, .panel3 .app10, .panel3 .app13, .panel3 .app14, .panel4 .app {
+  background-color: #4830c0; /*windows purple*/
+}
+
+.panel3 .app8, .panel3 .app21, .panel3 .app22 {
+  background-color: black;
+}
+
+.panel3 .app12 {
+  background-color: #12A5F4;
+}
+
+/*APPS ICONS ==============*/
+.icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-size: 5em; /* icons size */
+  color: white;
+}
+
+.icon-envelop:before {
+ content: "\e945";
+}
+
+.icon-IE:before {
+ content: "\eadb";
+}
+
+.icon-shopping-bag:before {
+ content: "\e900";
+}
+
+.icon-calendar:before {
+ content: "\e953";
+}
+
+.icon-map2:before {
+ content: "\e94c";
+}
+
+.icon-onedrive:before {
+ content: "\eaaf";
+}
+
+.icon-users:before {
+ content: "\e972";
+}
+
+.icon-bubble2:before {
+ content: "\e96e";
+}
+
+.icon-stats-dots:before {
+ content: "\e99b";
+}
+
+.icon-cloud:before {
+ content: "\e9c1";
+}
+
+.icon-trophy:before {
+ content: "\e99e";
+}
+
+.icon-newspaper:before {
+ content: "\e908";
+}
+
+.icon-briefcase:before {
+ content: "\e9ae";
+}
+
+.icon-gamepad:before {
+ content: "\e907";
+}
+
+.icon-camera:before {
+ content: "\e90f";
+}
+
+.icon-headphones:before {
+ content: "\e910";
+}
+
+.icon-play:before {
+ content: "\e912";
+}
+
+.icon-compass:before {
+ content: "\e909";
+}
+
+.icon-shopping-bag:before {
+ content: "\e900";
+}
+
+.icon-price-tag:before {
+ content: "\e935";
+}
+
+.icon-microsoftoutlook:before {
+ content: "\e906";
+ color: #0072c6;
+}
+
+.icon-file-text:before {
+ content: "\e922";
+}
+
+.icon-adobephotoshop:before {
+ content: "\e903";
+ color: #00c8ff;
+}
+
+.icon-adobe:before {
+ content: "\e905";
+ color: #f00;
+}
+
+.icon-dice:before {
+content: "\e915";
+}
+
+.icon-skype:before {
+content: "\eac5";
+}
+
+.icon-users2:before {
+ content: "\e90a";
+}
+
+.icon-question:before {
+ content: "\ea09";
+}
+
+.icon-netflix:before {
+content: "\e902";
+}
+
+.icon-ebay:before {
+ content: "\e901";
+ color: #e53238;
+}
+
+.icon-film:before {
+ content: "\e913";
+}
+
+.icon-database:before {
+content: "\e964";
+}
+
+.icon-play2:before {
+content: "\ea15";
+}
+
+.icon-adobeacrobatreader:before {
+content: "\e90b";
+color: #ee3f24;
+}
+
+.icon-adobephotoshop:before {
+content: "\e903";
+color: #00c8ff;
+}
+
+.icon-image:before {
+content: "\e90d";
+}
